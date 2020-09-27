@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/temperature"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:id="@+id/tv_temp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_temp_value"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/tv_temp"
+        android:text="@string/no_data"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/red"
+    />
+
+    <!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_temp_date"
+        android:layout_below="@id/tv_temp_value"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/date"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_temp_date_value"
+        android:layout_below="@id/tv_temp_value"
+        android:layout_toRightOf="@id/tv_temp_date"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:text="@string/no_data"
+        /> -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_temp"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:id="@+id/tv_humidity"
+        android:text="@string/humidity"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hum_value"
+        android:layout_below="@id/tv_temp_value"
+        android:layout_toRightOf="@id/tv_humidity"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:text="@string/no_data"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hum_date"
+        android:layout_below="@id/tv_hum_value"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="@string/date"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_hum_date_value"
+        android:layout_below="@id/tv_hum_value"
+        android:layout_toRightOf="@id/tv_hum_date"
+        android:textSize="20sp"
+        android:fontFamily="casual"
+        android:textStyle="bold"
+        android:textColor="@color/red"
+        android:text="@string/no_data"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/btn_request"
+        android:text="@string/get_response"
+        android:background="@color/btnColor"
+        android:onClick="onBtnRequestClick"
+        android:layout_marginBottom="15dp"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_plot_graph"
+        android:text="@string/plot_graph"
+        android:layout_above="@id/btn_request"
+        android:background="@color/btnColor"
+        android:layout_marginBottom="20dp"
+        android:onClick="onBtnGraphPlotClick"
+        />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/graph_view2"
+        android:layout_above="@id/btn_plot_graph"
+        android:layout_marginBottom="20dp"
+        />
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/graph_view1"
+        android:layout_above="@id/graph_view2"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

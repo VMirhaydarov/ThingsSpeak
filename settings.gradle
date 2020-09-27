@@ -1,0 +1,2 @@
+rootProject.name='ThingsSpeak'
+include ':app'

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ThingsSpeak</string>
+    <string name="temperature">Температура:\u0020</string>
+    <string name="date">Дата:\u0020</string>
+    <string name="humidity">Влажность:\u0020</string>
+    <string name="no_data">Нет данных</string>
+    <string name="error_response">Ошибка подключения</string>
+    <string name="get_response">Получить данные</string>
+    <string name="plot_graph">Построить график</string>
+</resources>
